@@ -1,0 +1,261 @@
+/* ==========VARIABLES */
+:root {
+--primary-color: #2E2F42;
+--main-text-color: #434455;
+--logo-btn-color: #4D5AE5;
+--main-inverse-color: #FFFFFF;
+--secondary-inverse-color: #E7E9FC;
+--accent-color: #404BBF;
+--logo-inverse-color: #F4F4FD;
+--secondary-bg-color: #F4F4FD;
+
+}
+
+.menu {
+    list-style: none
+}
+
+.link {
+    text-decoration: none;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+ul, 
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+
+body {
+    background-color: #FFFFFF;
+    color: var(--main-text-color);   
+    font-family: Roboto, sans-serif;
+    
+    
+}
+
+.container {
+    
+    width: 1128px;
+    margin-left: auto;
+    margin-right: auto;
+  
+
+}
+
+.hero-title, .secondary-title, .subtitle  {
+    color: var(--primary-color);
+}
+
+.button {
+    font-family: inherit;
+    letter-spacing: 0.04em
+}
+
+.visually-hidden {
+    
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+    
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+        }
+
+
+/* ==========HEADER== */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+/* ==========NAVIGATION */
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    margin-right: 76px;
+    color: var(--primary-color);
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;       
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+}
+
+.web {
+    color: var(--logo-btn-color);
+}
+
+.nav-list {
+        display: flex;
+    align-items: center;
+}
+
+.nav-list .menu:not(:last-child) {
+    margin-right: 40px;
+}
+
+.nav-list .link {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;      
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus,
+.address-list .link:hover,
+.address-list .link:focus {
+    color: var(--accent-color);
+}
+/* ==========CONTACTS */
+
+.address-list {
+    display: flex;
+    align-items: center;
+}
+
+.address-list .menu:not(:first-child) {
+    margin-left: 40px;
+}
+
+.address .link{     
+    color: var(--main-text-color);
+    font-style: normal;
+    font-size: 16px; 
+    line-height: 1.5;       
+    letter-spacing: 0.02em;
+}
+
+/* ==========HERO SECTION */
+
+.hero-section {
+    background-color: var(--primary-color);
+}
+
+.hero-title {
+    color: var(--main-inverse-color);          
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;      
+    text-align: center;    
+    letter-spacing: 0.02em;
+}
+
+.hero-section .button {
+    color: var(--main-inverse-color);
+    background-color: var(--logo-btn-color);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.18;
+}
+.hero-section .button:hover,
+.hero-section .button:focus {
+    background-color: var(--accent-color);
+}
+/* ==========STRATEGY-SECTION */
+
+.text {
+    color: var(--main-text-color);    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;        
+  }
+
+
+
+/* ==========SERVICES SECTION */
+
+.secondary-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;      
+    text-align: center;
+    letter-spacing: 0.02em;
+   
+}
+
+
+/* ==========TEAM SECTION */
+
+.team-section {
+    background-color: var(--secondary-bg-color);
+}
+
+/* ==========FOOTER */
+
+.footer {
+    color: var(--secondary-inverse-color);
+    background-color: var(--primary-color);
+}
+
+.footer .logo-link {
+    color: var(--logo-inverse-color);
+   
+  
+}
+
+
+  
+/* ==========PORTFOLIO */
+
+.subtitle
+{    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+    letter-spacing: 0.02em;
+}
+
+
+
+.filter-list .button {
+    color: var(--logo-btn-color);
+    background-color: var(--main-inverse-color);
+    cursor: pointer;           
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;    
+}
+
+.filter-list .button:hover,
+.filter-list .button:focus {
+    color: var(--main-inverse-color);
+    background-color: var(--accent-color);
+}
+
+.information .link {
+    color: var(--primary-color);
+}
+
