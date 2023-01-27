@@ -8,7 +8,6 @@
 --accent-color: #404BBF;
 --logo-inverse-color: #F4F4FD;
 --secondary-bg-color: #F4F4FD;
-
 }
 
 .menu {
@@ -40,37 +39,31 @@ img {
     display: block;
 }
 
-
 body {
     background-color: #FFFFFF;
     color: var(--main-text-color);   
-    font-family: Roboto, sans-serif;
-    
-    
+    font-family: Roboto, sans-serif;       
 }
 
-.container {
-    
+.container {    
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
     width: 1158px;
-  }
-
-.hero-title, .secondary-title, .subtitle  {
-    color: var(--primary-color);
-   
 }
-
-
-
-.secondary-title {
-    padding-bottom: 72px;
+.hero-title, .secondary-title, .subtitle  {
+    color: var(--primary-color);  
 }
 
 .subtitle {
     margin-bottom: 8px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+    letter-spacing: 0.02em;
 }
 
 .button {
@@ -79,20 +72,18 @@ body {
 }
 
 .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
     
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            margin: -1px;
-            border: 0;
-            padding: 0;
-    
-            white-space: nowrap;
-            clip-path: inset(100%);
-            clip: rect(0 0 0 0);
-            overflow: hidden;
-        }
-
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 /* ==========HEADER== */
 
@@ -102,7 +93,6 @@ body {
     justify-content: space-between;
     padding-top: 24px;
     padding-bottom: 24px;
-
 }
 
 /* ==========NAVIGATION */
@@ -114,6 +104,7 @@ body {
 
 .logo-link {
     margin-right: 76px;
+
     color: var(--primary-color);
     font-family: Raleway, sans-serif;
     text-transform: uppercase;
@@ -151,6 +142,7 @@ body {
 .address-list .link:focus {
     color: var(--accent-color);
 }
+
 /* ==========CONTACTS */
 
 .address-list {
@@ -178,26 +170,22 @@ body {
 }
 
 .hero-container  {
-    padding: 188px 315px;
-  
-
+    padding: 188px 315px;  
 }
-
 
 .hero-title {
     margin-bottom: 48px;
+
     color: var(--main-inverse-color);          
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;    
-    letter-spacing: 0.02em;
-   
-    
+    letter-spacing: 0.02em;  
 }
 
-.hero-section .button {
-   
+.hero-section .button {   
     padding: 16px 32px;
+
     color: var(--main-inverse-color);
     background-color: var(--logo-btn-color);
     cursor: pointer;
@@ -211,13 +199,12 @@ body {
 .hero-section .button:focus {
     background-color: var(--accent-color);
 }
-/* ==========STRATEGY-SECTION */
 
+/* ==========STRATEGY-SECTION */
 
 .strategy-container .str-list {
     display: flex;   
-    padding-top: 120px;    
-    
+    margin-top: 120px;   
 }
 
 .str-list .menu:not(:last-child) {
@@ -231,9 +218,13 @@ body {
     line-height: 1.5;        
   }
 
-
-
 /* ==========SERVICES SECTION */
+
+.services-section,
+.team-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .services-container .list {
     display: flex;
@@ -244,16 +235,14 @@ margin-right: 24px;
 }
 
 .secondary-title {
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;      
     text-align: center;
     letter-spacing: 0.02em;
-   
 }
-
 
 /* ==========TEAM SECTION */
 
@@ -263,7 +252,6 @@ margin-right: 24px;
 
 .team-list {
     display: flex;
-    padding-bottom: 120px;
 }
 
 .team-list .menu:not(:last-child) {
@@ -287,17 +275,8 @@ margin-right: 24px;
     flex-direction: column;
     padding-top: 100px;
     padding-bottom: 100px;
-   
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 156px;  
-
-}
+    padding-left: 156px;
+ }
 
 .footer-text {
     width: 264px;
@@ -305,24 +284,10 @@ margin-right: 24px;
 
 .footer-section .logo-link {
     color: var(--logo-inverse-color);
-    margin-bottom: 16px;
-    
-
-   
-  
+    margin-bottom: 16px;   
 }
-
-
   
 /* ==========PORTFOLIO */
-
-.subtitle
-{    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: left;
-    letter-spacing: 0.02em;
-}
 
 .filter-list {
     display: flex;
@@ -352,6 +317,7 @@ margin-right: 24px;
 .filter-list .button:focus {
     color: var(--main-inverse-color);
     background-color: var(--accent-color);
+   
 }
 
 .information-list {
@@ -362,6 +328,7 @@ margin-right: 24px;
 
 .information-list .menu:not(:nth-child(3n)) {
     margin-right: 24px;
+    
 }
 
 .information-list .menu:not(:nth-last-child(-n + 3)) {
@@ -372,3 +339,9 @@ margin-right: 24px;
     color: var(--primary-color);
 }
 
+.card-content {
+    padding: 32px 16px;
+    border-right: 1px solid var(--secondary-inverse-color);
+    border-bottom: 1px solid var(--secondary-inverse-color);;
+    border-left: 1px solid var(--secondary-inverse-color);;
+}
