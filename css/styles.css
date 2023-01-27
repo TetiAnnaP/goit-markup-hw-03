@@ -63,6 +63,8 @@ body {
    
 }
 
+
+
 .secondary-title {
     padding-bottom: 72px;
 }
@@ -175,19 +177,26 @@ body {
     text-align: center;
 }
 
+.hero-container  {
+    padding: 188px 315px;
+  
+
+}
+
 
 .hero-title {
-    
+    margin-bottom: 48px;
     color: var(--main-inverse-color);          
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;    
     letter-spacing: 0.02em;
-    /* width: 500px; */
+   
     
 }
 
 .hero-section .button {
+   
     padding: 16px 32px;
     color: var(--main-inverse-color);
     background-color: var(--logo-btn-color);
@@ -281,8 +290,22 @@ margin-right: 24px;
    
 }
 
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 156px;  
+
+}
+
+.footer-text {
+    width: 264px;
+}
+
 .footer-section .logo-link {
     color: var(--logo-inverse-color);
+    margin-bottom: 16px;
     
 
    
@@ -301,21 +324,48 @@ margin-right: 24px;
     letter-spacing: 0.02em;
 }
 
+.filter-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 96px;
+    margin-bottom: 72px;
+}
 
+.filter-list .menu:not(:last-child) {
+    margin-right: 24px;
+}
 
 .filter-list .button {
+    padding: 12px 24px;
     color: var(--logo-btn-color);
-    background-color: var(--main-inverse-color);
+    background-color: var(--secondary-bg-color);
+    border: 1px solid var(--secondary-inverse-color);
+    border-radius: 4px;
     cursor: pointer;           
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;    
+    line-height: 1.5;  
+    
 }
 
 .filter-list .button:hover,
 .filter-list .button:focus {
     color: var(--main-inverse-color);
     background-color: var(--accent-color);
+}
+
+.information-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+}
+
+.information-list .menu:not(:nth-child(3n)) {
+    margin-right: 24px;
+}
+
+.information-list .menu:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 48px;
 }
 
 .information .link {
