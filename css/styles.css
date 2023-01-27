@@ -204,7 +204,7 @@ body {
 
 .strategy-container .str-list {
     display: flex;   
-    margin-top: 120px;   
+    padding-top: 120px;   
 }
 
 .str-list .menu:not(:last-child) {
@@ -292,8 +292,8 @@ margin-right: 24px;
 .filter-list {
     display: flex;
     justify-content: center;
-    margin-top: 96px;
-    margin-bottom: 72px;
+    padding-top: 96px;
+    padding-bottom: 72px;
 }
 
 .filter-list .menu:not(:last-child) {
