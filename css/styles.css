@@ -37,6 +37,7 @@ ol {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 body {
@@ -172,6 +173,7 @@ body {
 
 .hero-container  {
     padding: 188px 315px;  
+   
 }
 
 .hero-title {
@@ -204,13 +206,14 @@ body {
 /* ==========STRATEGY-SECTION */
 
 .strategy-container .str-list {
-    display: flex;   
+    display: flex;  
     padding-top: 120px;   
 }
 
-.str-list .menu:not(:last-child) {
+.str-list .menu:not(:first-child) {
     margin-left: 24px;
 }
+
 
 .text {
     color: var(--main-text-color);    
@@ -231,8 +234,8 @@ body {
     display: flex;
 }
 
-.services-list .menu:not(:last-child) {
-margin-right: 24px;
+.services-list .menu:not(:first-child) {
+margin-left: 24px;
 }
 
 .secondary-title {
@@ -255,8 +258,8 @@ margin-right: 24px;
     display: flex;
 }
 
-.team-list .menu:not(:last-child) {
-    margin-right: 24px;
+.team-list .menu:not(:first-child) {
+    margin-left: 24px;
 }
 
 .team-list h3, 
